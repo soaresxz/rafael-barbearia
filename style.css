@@ -1,0 +1,75 @@
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        iframe, video, img {
+            max-width: 100%;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .btn-filter.active {
+            background-color: #EF4444;
+            border-color: #EF4444;
+            color: white;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .media-placeholder {
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #444;
+            border: 1px dashed #333;
+        }
+
+        .btn-filter {
+            background-color: #000000 !important;   
+            border: 1px solid #EF4444 !important;   
+            color: #ffffff !important;              
+            
+            padding: 10px 24px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-filter.active {
+            background-color: #EF4444 !important;   
+            color: #ffffff !important;
+        }
+
+        .btn-filter:hover {
+            background-color: #EF4444 !important;  
+            color: #ffffff !important;
+        }
+
+        @media (max-width: 768px) {
+            .btn-filter {
+                padding: 6px 12px !important; 
+                font-size: 11px !important;  
+                margin: 2px !important;    
+            }
+
+            h1 {
+                font-size: 2rem !important;   
+            }
+        }
